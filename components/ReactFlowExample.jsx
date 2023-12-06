@@ -26,9 +26,9 @@ function Flow() {
   return (
     <ReactFlow
        defaultEdgeOptions={defaultEdgeOptions}
-      //onNodesChange={onNodesChange}
-      //onEdgesChange={onEdgesChange}
-      //onConnect={onConnect}
+      onNodesChange={onNodesChange}
+      onEdgesChange={onEdgesChange}
+      onConnect={onConnect}
       zoomOnScroll={false}
       zoomOnPinch={false}
       panOnDrag={false}

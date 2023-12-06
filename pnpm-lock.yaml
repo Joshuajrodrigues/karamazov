@@ -18,6 +18,7 @@ specifiers:
   jest-environment-jsdom: 29.7.0
   lucide-react: ^0.294.0
   next: 14.0.3
+  pocketbase: ^0.19.0
   postcss: ^8.4.31
   react: ^18
   react-dom: ^18
@@ -35,6 +36,7 @@ dependencies:
   clsx: 2.0.0
   lucide-react: 0.294.0_react@18.2.0
   next: 14.0.3_biqbaboplfbrettd7655fr4n2y
+  pocketbase: 0.19.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   reactflow: 11.10.1_p5xgpqf7wiayqxc6j6o5zt2pdy
@@ -3390,6 +3392,10 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
+
+  /pocketbase/0.19.0:
+    resolution: {integrity: sha512-bUVZfVdD17K8GnwbeDMZPEdREVg2YE0F8uHPDC0zer4VtwXUqoPCCeudTy3fhUE7pfuKnfpuPxeBSYsBY3AGIQ==}
+    dev: false
 
   /postcss-import/15.1.0_postcss@8.4.31:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
