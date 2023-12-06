@@ -24,7 +24,7 @@ const BookCard = ({
   return (
     <Card className="w-62 m-1">
       <CardHeader className="p-0 rounded-t-xl flex items-center justify-center h-32 w-64 overflow-hidden">
-        <img className="w-full " src={img} alt={title} />
+        <img className="w-full object-cover" src={img} alt={title} />
       </CardHeader>
       <CardContent >
         <CardDescription className="my-2">{author}</CardDescription>

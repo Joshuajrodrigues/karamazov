@@ -14,14 +14,14 @@ export default function Home() {
         <Search/>
       </section>
       <section className="flex justify-center items-center flex-wrap m-5">
-        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="https://mdl.artvee.com/sftb/214450fg.jpg"/>
-        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="https://mdl.artvee.com/sftb/214450fg.jpg"/>
-        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="https://mdl.artvee.com/sftb/214450fg.jpg"/>
-        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="https://mdl.artvee.com/sftb/214450fg.jpg"/>
-        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="https://mdl.artvee.com/sftb/214450fg.jpg"/>
-        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="https://mdl.artvee.com/sftb/214450fg.jpg"/>
-        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="https://mdl.artvee.com/sftb/214450fg.jpg"/>
-        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="https://mdl.artvee.com/sftb/214450fg.jpg"/>
+        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="test.jpg"/>
+        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="test.jpg"/>
+        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="test.jpg"/>
+        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="test.jpg"/>
+        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="test.jpg"/>
+        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="test.jpg"/>
+        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="test.jpg"/>
+        <BookCard title="The Brothers Karamazov" author="Dostoevesky" img="test.jpg"/>
       </section>
     </main>
   );
