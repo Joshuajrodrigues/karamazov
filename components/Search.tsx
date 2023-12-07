@@ -3,7 +3,7 @@ import { Input } from './ui/input'
 
 const Search = () => {
   return (
-    <Input placeholder='Search book' className=' border-rose-600 w-64'/>
+    <Input placeholder='Search book' className=' border-secondary w-64'/>
   )
 }
 

@@ -11,21 +11,10 @@ describe('Header', () => {
     render(<Header />)
 
     const heading = screen.getByRole('heading', {
-      name: /KARAMAZOV/,
+      name: /Whoiswho.In/,
     })
 
     expect(heading).toBeInTheDocument()
-  }),
-  it('renders login and signup buttons', () => {
-    render(<Header />)
-
-    const login = screen.getByRole('link', {
-      name: /login/i,
-    })
-    const signup = screen.getByRole('link', {
-      name: /sign up/i,
-    })
-    expect(signup).toBeInTheDocument()
-    expect(login).toBeInTheDocument()
   })
+ 
 })

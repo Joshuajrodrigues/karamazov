@@ -3,27 +3,37 @@
 @tailwind utilities;
  
 
+
+
+/* 
+red- 4 67% 54%
+red sec = 4 67% 44%
+brown- 336 5% 21%
+peach dark - 34 38% 85%
+peach light - 32 38% 92%
+*/
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
+    --background: 34 38% 85%;
+    --foreground: 32 38% 92%;
+    --card: 32 38% 92%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 346.8 77.2% 49.8%;
+    --primary: 4 67% 44%;
     --primary-foreground: 355.7 100% 97.3%;
-    --secondary: 240 4.8% 95.9%;
+    --secondary: 4 67% 54%;
     --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
+    --muted: 4 67% 54%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
+    --accent: 4 67% 54%;
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 346.8 77.2% 49.8%;
+    --ring: 4 67% 54%;
     --radius: 0.5rem;
   }
  
@@ -56,10 +66,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-rose-100 text-foreground;
+    @apply bg-background text-foreground;
   }
   .gradient-text{
-    background-image: linear-gradient(#e21143,#ffb03a);
+    background-image: linear-gradient(hsl(var(--primary)),hsl(var(--secondary)));
     background-clip: text;
     color: transparent;
   }

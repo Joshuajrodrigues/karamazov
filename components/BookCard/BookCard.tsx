@@ -32,7 +32,7 @@ const BookCard = ({
       </CardContent>
       <CardFooter className=" text-sm flex justify-between items-center">
         {status}
-        <Link href={`/book/${title.split(" ").join("-")}`}>
+        <Link href={`/${title.toLowerCase().split(" ").join("-")}`}>
           <ArrowRightCircle />
         </Link>
       </CardFooter>
