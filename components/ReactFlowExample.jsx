@@ -1,7 +1,12 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import ReactFlow, { applyEdgeChanges,addEdge, applyNodeChanges } from "reactflow";
+import ReactFlow, {
+  applyEdgeChanges,
+  addEdge,
+  applyNodeChanges,
+  Controls, Background
+} from "reactflow";
 import "reactflow/dist/style.css";
 
 import initialNodes from "../flowdata/nodes";
@@ -25,17 +30,18 @@ function Flow() {
   const defaultEdgeOptions = { animated: true };
   return (
     <ReactFlow
-       defaultEdgeOptions={defaultEdgeOptions}
+      defaultEdgeOptions={defaultEdgeOptions}
       onNodesChange={onNodesChange}
       onEdgesChange={onEdgesChange}
-      onConnect={onConnect}
-      zoomOnScroll={false}
-      zoomOnPinch={false}
-      panOnDrag={false}
+      onConnect={onConnect} 
+      
       nodes={nodes}
       edges={edges}
       fitView
-    />
+    >
+       <Background />
+       <Controls/>
+    </ReactFlow>
   );
 }
 
