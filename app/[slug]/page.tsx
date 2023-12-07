@@ -6,7 +6,7 @@ import React, { useCallback, useRef, useState } from 'react'
 const page = () => {
 
   return (
-    <div className=' w-screen h-screen'>
+    <div className=' w-screen h-[calc(100vh-4rem)]'>
         
 
           <Flow/>
