@@ -7,6 +7,7 @@ import ReactFlow, {
   applyNodeChanges,
   Controls,
   Background,
+  Panel
 } from "reactflow";
 import "reactflow/dist/style.css";
 
@@ -28,6 +29,21 @@ function Flow() {
     (connection) => setEdges((eds) => addEdge(connection, eds)),
     [setEdges]
   );
+  const addNode=()=>{
+    setNodes((els) => {
+      console.log(els);
+      return [
+        ...els,
+        {
+          id: Math.random(),
+          data: { label: 'Character' },
+          height: 40,
+          width:150,
+          position: { x: 100, y: 55 },
+        }
+      ];
+    })
+  }
   const defaultEdgeOptions = { animated: true };
   return (
     <>
@@ -42,6 +58,9 @@ function Flow() {
       >
         <Background />
         <Controls />
+        <Panel position="bottom-center">
+          <button onClick={addNode}>add</button>
+        </Panel>
       </ReactFlow>
 
     </>
