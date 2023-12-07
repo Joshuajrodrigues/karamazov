@@ -5,7 +5,8 @@ import ReactFlow, {
   applyEdgeChanges,
   addEdge,
   applyNodeChanges,
-  Controls, Background
+  Controls,
+  Background,
 } from "reactflow";
 import "reactflow/dist/style.css";
 
@@ -29,19 +30,21 @@ function Flow() {
   );
   const defaultEdgeOptions = { animated: true };
   return (
-    <ReactFlow
-      defaultEdgeOptions={defaultEdgeOptions}
-      onNodesChange={onNodesChange}
-      onEdgesChange={onEdgesChange}
-      onConnect={onConnect} 
-      
-      nodes={nodes}
-      edges={edges}
-      fitView
-    >
-       <Background />
-       <Controls/>
-    </ReactFlow>
+    <>
+      <ReactFlow
+        defaultEdgeOptions={defaultEdgeOptions}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        onConnect={onConnect}
+        nodes={nodes}
+        edges={edges}
+        fitView
+      >
+        <Background />
+        <Controls />
+      </ReactFlow>
+
+    </>
   );
 }
 
