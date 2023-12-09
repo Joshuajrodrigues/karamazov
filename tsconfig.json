@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/ReactFlowExample.jsx", "jest.setup.js", "jest.config.js", "components/Header/Header.test.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Flow/ReactFlowExample.jsx", "jest.setup.ts", "jest.config.ts", "components/Header/Header.test.tsx"],
   "exclude": ["node_modules"]
 }

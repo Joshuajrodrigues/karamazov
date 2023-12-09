@@ -11,7 +11,7 @@ describe('Header', () => {
     render(<Header />)
 
     const heading = screen.getByRole('heading', {
-      name: /Whoiswho.In/,
+      name: /Karamazov/,
     })
 
     expect(heading).toBeInTheDocument()

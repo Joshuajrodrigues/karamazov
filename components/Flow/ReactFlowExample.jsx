@@ -11,8 +11,8 @@ import ReactFlow, {
 } from "reactflow";
 import "reactflow/dist/style.css";
 
-import initialNodes from "../flowdata/nodes";
-import initialEdges from "../flowdata/edges";
+import initialNodes from "../../flowdata/nodes";
+import initialEdges from "../../flowdata/edges";
 import Header from '@/components/Header/Header'
 function Flow() {
   const [nodes, setNodes] = useState(initialNodes);

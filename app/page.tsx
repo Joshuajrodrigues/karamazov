@@ -1,5 +1,5 @@
 import Header from "@/components/Header/Header";
-import Flow from "../components/ReactFlowExample";
+import Flow from "../components/Flow/ReactFlowExample";
 import Search from "@/components/Search";
 import BookCard from "@/components/BookCard/BookCard";
 
