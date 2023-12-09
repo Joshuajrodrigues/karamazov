@@ -66,12 +66,9 @@ peach light - 32 38% 92%
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground min-h-['stretch'];
+    @apply bg-background text-foreground ;
   }
-  html{
-    height: stretch;
-    height: -webkit-fill-available;
-  }
+
   .gradient-text{
     background-image: linear-gradient(hsl(var(--primary)),hsl(var(--secondary)));
     background-clip: text;
