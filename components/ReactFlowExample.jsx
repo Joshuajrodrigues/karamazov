@@ -58,7 +58,7 @@ function Flow() {
       >
         <Background />
         <Controls />
-        <Panel position="top-center">
+        <Panel style={{width:"100%" , margin:"0"}} position="top-center">
         <Header />
         </Panel>
         <Panel position="bottom-center">
