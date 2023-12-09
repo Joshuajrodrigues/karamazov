@@ -13,7 +13,7 @@ import "reactflow/dist/style.css";
 
 import initialNodes from "../flowdata/nodes";
 import initialEdges from "../flowdata/edges";
-
+import Header from '@/components/Header/Header'
 function Flow() {
   const [nodes, setNodes] = useState(initialNodes);
   const [edges, setEdges] = useState(initialEdges);
@@ -58,6 +58,9 @@ function Flow() {
       >
         <Background />
         <Controls />
+        <Panel position="top-center">
+        <Header />
+        </Panel>
         <Panel position="bottom-center">
           <button onClick={addNode}>add</button>
         </Panel>

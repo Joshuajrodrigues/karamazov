@@ -6,7 +6,7 @@ import BookCard from "@/components/BookCard/BookCard";
 export default function Home() {
   return (
     <main >
-
+    <Header />
       <section className="flex justify-center items-center">
         <h2 className="gradient-text text-center text-3xl font-extrabold mt-5">NEVER FORGET A CHARACTER AGAIN</h2>
       </section>
