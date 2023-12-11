@@ -28,6 +28,7 @@ specifiers:
   tailwindcss-animate: ^1.0.7
   ts-node: ^10.9.2
   typescript: ^5
+  zustand: ^4.4.7
 
 dependencies:
   '@phosphor-icons/react': 2.0.15_biqbaboplfbrettd7655fr4n2y
@@ -43,6 +44,7 @@ dependencies:
   reactflow: 11.10.1_p5xgpqf7wiayqxc6j6o5zt2pdy
   tailwind-merge: 2.0.0
   tailwindcss-animate: 1.0.7_tailwindcss@3.3.5
+  zustand: 4.4.7_vefaa57jiikjg7ztnhkaom6nr4
 
 devDependencies:
   '@testing-library/jest-dom': 6.1.5_yvyevhylwpqfzitp4gk3eja2be
@@ -841,7 +843,7 @@ packages:
       classcat: 5.0.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      zustand: 4.4.6_vefaa57jiikjg7ztnhkaom6nr4
+      zustand: 4.4.7_vefaa57jiikjg7ztnhkaom6nr4
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -857,7 +859,7 @@ packages:
       classcat: 5.0.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      zustand: 4.4.6_vefaa57jiikjg7ztnhkaom6nr4
+      zustand: 4.4.7_vefaa57jiikjg7ztnhkaom6nr4
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -879,7 +881,7 @@ packages:
       d3-zoom: 3.0.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      zustand: 4.4.6_vefaa57jiikjg7ztnhkaom6nr4
+      zustand: 4.4.7_vefaa57jiikjg7ztnhkaom6nr4
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -899,7 +901,7 @@ packages:
       d3-zoom: 3.0.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      zustand: 4.4.6_vefaa57jiikjg7ztnhkaom6nr4
+      zustand: 4.4.7_vefaa57jiikjg7ztnhkaom6nr4
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -917,7 +919,7 @@ packages:
       d3-selection: 3.0.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      zustand: 4.4.6_vefaa57jiikjg7ztnhkaom6nr4
+      zustand: 4.4.7_vefaa57jiikjg7ztnhkaom6nr4
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -933,7 +935,7 @@ packages:
       classcat: 5.0.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      zustand: 4.4.6_vefaa57jiikjg7ztnhkaom6nr4
+      zustand: 4.4.7_vefaa57jiikjg7ztnhkaom6nr4
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -4252,8 +4254,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zustand/4.4.6_vefaa57jiikjg7ztnhkaom6nr4:
-    resolution: {integrity: sha512-Rb16eW55gqL4W2XZpJh0fnrATxYEG3Apl2gfHTyDSE965x/zxslTikpNch0JgNjJA9zK6gEFW8Fl6d1rTZaqgg==}
+  /zustand/4.4.7_vefaa57jiikjg7ztnhkaom6nr4:
+    resolution: {integrity: sha512-QFJWJMdlETcI69paJwhSMJz7PPWjVP8Sjhclxmxmxv/RYI7ZOvR5BHX+ktH0we9gTWQMxcne8q1OY8xxz604gw==}
     engines: {node: '>=12.7.0'}
     peerDependencies:
       '@types/react': '>=16.8'

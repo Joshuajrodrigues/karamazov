@@ -27,11 +27,16 @@ const defaultEdgeOptions: DefaultEdgeOptions = {
   animated: true,
 };
 import "reactflow/dist/style.css";
-import initialNodes from "../../flowdata/nodes";
-import initialEdges from "../../flowdata/edges";
+
 import Header from "../Header/Header";
 import { Button } from "../ui/button";
-const RelationsChart = () => {
+const RelationsChart = ({
+  initialNodes,
+  initialEdges,
+}:{
+  initialNodes:Node[],
+  initialEdges:Edge[]
+}) => {
   const [nodes, setNodes] = useState<Node[]>(initialNodes);
   const [edges, setEdges] = useState<Edge[]>(initialEdges);
 
@@ -80,7 +85,7 @@ const RelationsChart = () => {
           <Header />
         </Panel>
         <Panel position="bottom-center">
-          <Button onClick={addNode}>add</Button>
+          <Button onClick={addNode}>Add</Button>
         </Panel>
       </ReactFlow>
    

@@ -1,7 +1,6 @@
 export default [
     {
       id: '1',
-
       data: { label: 'Never' },
       position: { x: 100, y: 15 },
     },
