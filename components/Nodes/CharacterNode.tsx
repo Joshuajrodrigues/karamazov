@@ -17,7 +17,7 @@ const CharacterNode = ({ id, data }: { id: string; data: StoreData }) => {
   return (
     <div
       onBlur={() => setEditMode(false)}
-      className=" bg-primary-foreground w-32 text-center text-primary shadow-md rounded-sm"
+      className=" bg-foreground w-32 text-center text-primary shadow-md rounded-sm"
     >
       <Handle position={"top" as Position} type="target" />
 
