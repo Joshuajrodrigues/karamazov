@@ -18,6 +18,7 @@ import ReactFlow, {
   Controls,
   Panel,
   MiniMap,
+  BackgroundVariant,
 } from "reactflow";
 
 import "reactflow/dist/style.css";
@@ -78,7 +79,7 @@ const RelationsChart = () => {
       fitViewOptions={fitViewOptions}
       defaultEdgeOptions={defaultEdgeOptions}
     >
-      <Background />
+      <Background variant={"lines" as BackgroundVariant} />
       <MiniMap nodeColor={nodeColor} zoomable pannable />
       <Panel style={{ width: "100%", margin: "0" }} position="top-center">
         <Header />
