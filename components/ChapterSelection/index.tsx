@@ -8,7 +8,7 @@ import {
 
 const ChapterSelection = () => {
   return (
-    <Select className="mr-2 text-primary " >
+    <Select>
       <SelectTrigger className="w-[140px] mr-2 text-primary ">
         <SelectValue placeholder="Select Chapter" />
       </SelectTrigger>
