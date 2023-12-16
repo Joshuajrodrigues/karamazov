@@ -31,71 +31,54 @@ import "reactflow/dist/style.css";
 import Header from "../Header/Header";
 import { Button } from "../ui/button";
 import CharacterNode from "../Nodes/CharacterNode";
+import { Store, useStore } from "@/store/store";
+import { shallow } from "zustand/shallow";
 
 
 const nodeTypes ={
   char:CharacterNode
 }
 
+const selector=(store:Store)=>({
+  nodes:store.nodes,
+  edges:store.edges,
+  createNode:store.createNode,
+  onNodesChange:store.onNodesChange,
+  onEdgeChange:store.onEdgeChange,
+  addEdge:store.addEdge
+})
 
 
-const RelationsChart = ({
-  initialNodes,
-  initialEdges,
-}:{
-  initialNodes:Node[],
-  initialEdges:Edge[]
-}) => {
-  const [nodes, setNodes] = useState<Node[]>(initialNodes);
-  const [edges, setEdges] = useState<Edge[]>(initialEdges);
+const RelationsChart = () => {
+  
+  const store = useStore(selector,shallow)
 
-  const onNodesChange: OnNodesChange = useCallback(
-    (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
-    [setNodes]
-  );
-  const onEdgesChange: OnEdgesChange = useCallback(
-    (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
-    [setEdges]
-  );
-  const onConnect: OnConnect = useCallback(
-    (connection) => setEdges((eds) => addEdge(connection, eds)),
-    [setEdges]
-  );
-  const addNode=()=>{
-    setNodes((els:any) => {
-      console.log(els);
-      return [
-        ...els,
-        {
-          id: Math.random(),
-          data: { label: 'Character' },
-          height: 40,
-          width:150,
-          position: { x: 100, y: 55 },
-        }
-      ];
-    })
-  }
+  const [edges, setEdges] = useState<Edge[]>(store.edges);
+
+
+
+
+
   return (
 
       <ReactFlow
         nodeTypes={nodeTypes}
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        onConnect={onConnect}
+        nodes={store.nodes}
+        edges={store.edges}
+        onNodesChange={store.onNodesChange}
+        onEdgesChange={store.onEdgeChange}
+        onConnect={store.addEdge}
         fitView
         fitViewOptions={fitViewOptions}
         defaultEdgeOptions={defaultEdgeOptions}
       >
         <Background />
-        <Controls />
+       
         <Panel style={{ width: "100%", margin: "0" }} position="top-center">
           <Header />
         </Panel>
-        <Panel position="bottom-center">
-          <Button onClick={addNode}>Add</Button>
+        <Panel position="top-right">
+          <Button onClick={()=>store.createNode()}>Add</Button>
         </Panel>
       </ReactFlow>
    
