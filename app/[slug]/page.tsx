@@ -16,7 +16,7 @@ const page = () => {
   const store = useStore(selector,shallow)
 
   return (
-    <div className=" w-screen h-[calc(100vh-4rem)]">
+    <div className=" w-screen h-screen">
       <RelationsChart initialNodes={store.nodes} initialEdges={store.edges} />
       {/* <Flow/> */}
     </div>
