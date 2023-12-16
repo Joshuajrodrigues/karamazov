@@ -49,6 +49,19 @@ const selector = (store: Store) => ({
   addEdge: store.addEdge,
 });
 
+
+const nodeColor = (node:Node) => {
+  switch (node.type) {
+    case 'input':
+      return 'rgb(187, 47, 37)';
+    case 'output':
+      return 'rgb(187, 47, 37)';
+    default:
+      return 'rgb(187, 47, 37)';
+  }
+};
+
+
 const RelationsChart = () => {
   const store = useStore(selector, shallow);
 
@@ -66,7 +79,7 @@ const RelationsChart = () => {
       defaultEdgeOptions={defaultEdgeOptions}
     >
       <Background />
-      <MiniMap zoomable pannable />
+      <MiniMap nodeColor={nodeColor} zoomable pannable />
       <Panel style={{ width: "100%", margin: "0" }} position="top-center">
         <Header />
       </Panel>
