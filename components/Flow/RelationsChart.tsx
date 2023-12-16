@@ -30,6 +30,15 @@ import "reactflow/dist/style.css";
 
 import Header from "../Header/Header";
 import { Button } from "../ui/button";
+import CharacterNode from "../Nodes/CharacterNode";
+
+
+const nodeTypes ={
+  char:CharacterNode
+}
+
+
+
 const RelationsChart = ({
   initialNodes,
   initialEdges,
@@ -70,6 +79,7 @@ const RelationsChart = ({
   return (
 
       <ReactFlow
+        nodeTypes={nodeTypes}
         nodes={nodes}
         edges={edges}
         onNodesChange={onNodesChange}
