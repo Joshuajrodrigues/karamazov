@@ -28,6 +28,7 @@ import { Button } from "../ui/button";
 import CharacterNode from "../Nodes/CharacterNode";
 import { Store, useStore } from "@/store/store";
 import { shallow } from "zustand/shallow";
+import ChapterSelection from "../ChapterSelection";
 
 const fitViewOptions: FitViewOptions = {
   padding: 0.2,
@@ -84,7 +85,8 @@ const RelationsChart = () => {
       <Panel style={{ width: "100%", margin: "0" }} position="top-center">
         <Header />
       </Panel>
-      <Panel position="top-right">
+      <Panel className="flex justify-center items-center" position="top-right">
+        <ChapterSelection/>
         <Button onClick={() => store.createNode()}>Add</Button>
       </Panel>
     </ReactFlow>
